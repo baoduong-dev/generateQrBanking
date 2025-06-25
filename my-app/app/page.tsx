@@ -56,7 +56,7 @@ export default function VietQRPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V6a1 1 0 00-1-1H5a1 1 0 00-1 1v1a1 1 0 001 1zm12 0h2a1 1 0 001-1V6a1 1 0 00-1-1h-2a1 1 0 00-1 1v1a1 1 0 001 1zM5 20h2a1 1 0 001-1v-1a1 1 0 00-1-1H5a1 1 0 00-1 1v1a1 1 0 001 1z" />
             </svg>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">VietQR Generator</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">Tạo QR thanh toán</h1>
           <p className="text-gray-600 text-sm sm:text-base">Tạo mã QR thanh toán nhanh chóng và an toàn</p>
         </div>
 
@@ -116,7 +116,7 @@ export default function VietQRPage() {
                 >
                   {banks.map((bank) => (
                     <option key={bank.id} value={bank.id}>
-                      {bank.name} ({bank.id})
+                      {bank.name}
                     </option>
                   ))}
                 </select>
@@ -203,7 +203,7 @@ export default function VietQRPage() {
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Mã QR đã được tạo thành công!</h3>
-              <p className="text-gray-600 text-sm">Quét mã QR bên dưới để thực hiện thanh toán</p>
+              <p className="text-gray-600 text-sm">Quét hoặc tải mã QR bên dưới để thực hiện thanh toán</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-4 inline-block">
               <img 
@@ -215,7 +215,7 @@ export default function VietQRPage() {
             </div>
             <div className="mt-4 pt-4 border-t border-gray-100">
               <p className="text-xs text-gray-500">
-                💡 Mã QR có thể được quét bởi các ứng dụng ngân hàng hỗ trợ VietQR
+                💡 Mã QR có thể được quét bởi các ứng dụng ngân hàng hỗ trợ
               </p>
             </div>
           </div>
