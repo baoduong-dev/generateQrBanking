@@ -28,7 +28,7 @@ export default function VietQRPage() {
       const blob = await res.blob();
       const url = URL.createObjectURL(blob);
       setQrUrl(url);
-    } catch (err) {
+    } catch {
       alert('Tạo QR thất bại');
     } finally {
       setLoading(false);

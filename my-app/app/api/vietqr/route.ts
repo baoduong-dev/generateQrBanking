@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 const VIETQR_API = 'https://api.vietqr.io/v2/generate';
-const CLIENT_ID = process.env.VIETQR_CLIENT_ID || ''; // Nhập Client ID nếu cần
-const API_KEY = process.env.VIETQR_API_KEY || '';     // Nhập API Key nếu cần
+// const CLIENT_ID = process.env.VIETQR_CLIENT_ID || ''; // Nhập Client ID nếu cần
+// const API_KEY = process.env.VIETQR_API_KEY || '';     // Nhập API Key nếu cần
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
