@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🇻🇳 VietQR Dynamic QR Generator
 
-## Getting Started
+Ứng dụng tạo mã QR thanh toán động theo tiêu chuẩn VietQR (Napas) sử dụng Next.js 15 (App Router), API route và giao diện đơn giản thân thiện.
 
-First, run the development server:
+![GenerateQR demo](https://generate-qr-banking.vercel.app/demo.png)
+
+---
+
+## 🚀 Tính năng
+
+- ✅ Nhập số tài khoản, tên, ngân hàng, số tiền, nội dung
+- ✅ Gửi request đến API VietQR
+- ✅ Hiển thị ảnh QR có thể quét được bằng các app banking (Vietcombank, MB, ACB, TPBank,...)
+- ✅ Không cần API key (có thể nâng cấp)
+
+---
+
+## 🧩 Công nghệ sử dụng
+
+- [Next.js 15 (App Router)](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [VietQR API](https://api.vietqr.io)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+---
+
+## 📦 Cài đặt
 
 ```bash
+git clone https://github.com/baoduong-dev/generateQrBanking.git
+cd my-app
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 Sử dụng
+1. Truy cập http://localhost:3000/vietqr
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Nhập các trường thông tin:
 
-## Learn More
+- Số tài khoản
 
-To learn more about Next.js, take a look at the following resources:
+- Tên tài khoản (IN HOA, không dấu)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Mã ngân hàng (VD: Vietcombank là 970436)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Số tiền (tuỳ chọn)
 
-## Deploy on Vercel
+- Nội dung thanh toán (tuỳ chọn)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Bấm Tạo mã QR
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Kết quả: ảnh QR có thể quét để chuyển khoản qua mobile banking.
+
+---
+
+## 🏦 Mã ngân hàng (Bank ID) phổ biến
+| Ngân hàng | Mã Bank ID |
+| -------- | ---------- |
+| Vietcombank | 970436 |
+| MB Bank | 970422 |
+| BIDV | 970418 |
+| ACB | 970416 |
+| TPBank | 970423 |
+| Sacombank | 970403 |
+| Techcombank | 970407 |
+
+Bạn có thể dùng dropdown hoặc form nhập tay mã bank.
+
+---
+
+## 🛠 Cấu trúc dự án
+```bash
+my-app/
+├── app/
+│   └── vietqr/
+│       └── page.tsx       # Giao diện tạo QR
+├── app/api/
+│   └── vietqr/route.ts    # API Route gọi tới VietQR API
+├── public/
+├── tailwind.config.ts
+├── next.config.ts
+├── tsconfig.json
+```
+
+---
+
+## 🔐 Bảo mật & API key (nâng cao)
+VietQR API hỗ trợ x-client-id và x-api-key nếu bạn có nhu cầu tích hợp quy mô lớn. Bạn có thể đăng ký tại [VietQR API](https://vietqr.io) hoặc liên hệ Napas/ngân hàng.
+
+---
+
+## 📄 License
+MIT License © 2025 - Dương Thuần Bảo [(@baoduong-dev)](https://github.com/baoduong-dev)
+
+---
+
+## ✨ Liên hệ & hỗ trợ
+- Website: [baoduong.vercel.app](https://baoduong.vercel.app)
+- Email: [duongthuanbao@gmail.com](mailto:duongthuanbao@gmail.com)
+- Facebook: [fb.com/duongthuanbao](https://facebook.com/duongthuanbao)
