@@ -8,10 +8,10 @@
 
 ## 🚀 Tính năng
 
-- ✅ Nhập số tài khoản, tên, ngân hàng, số tiền, nội dung
-- ✅ Gửi request đến API VietQR
-- ✅ Hiển thị ảnh QR có thể quét được bằng các app banking (Vietcombank, MB, ACB, TPBank,...)
-- ✅ Không cần API key (có thể nâng cấp)
+✅ Nhập số tài khoản, tên, ngân hàng, số tiền, nội dung
+✅ Gửi request đến API VietQR
+✅ Hiển thị ảnh QR có thể quét được bằng các app banking (Vietcombank, MB, ACB, TPBank,...)
+✅ Không cần API key (có thể nâng cấp)
 
 ---
 
@@ -36,7 +36,7 @@ npm run dev
 ---
 
 ## 📱 Sử dụng
-1. Truy cập http://localhost:3000/vietqr
+1. Truy cập http://localhost:3000/
 
 2. Nhập các trường thông tin:
 
