@@ -9,8 +9,11 @@
 ## 🚀 Tính năng
 
 ✅ Nhập số tài khoản, tên, ngân hàng, số tiền, nội dung
+
 ✅ Gửi request đến API VietQR
+
 ✅ Hiển thị ảnh QR có thể quét được bằng các app banking (Vietcombank, MB, ACB, TPBank,...)
+
 ✅ Không cần API key (có thể nâng cấp)
 
 ---
