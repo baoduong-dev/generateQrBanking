@@ -50,7 +50,7 @@ export async function GET(req: NextRequest) {
         'Content-Disposition': 'inline; filename="vietqr.png"'
       }
     });
-  } catch (err) {
+  } catch {
     return NextResponse.json({ error: 'Lỗi kết nối VietQR API' }, { status: 500 });
   }
 }
