@@ -61,7 +61,7 @@ npm run dev
 
 ## 🏦 Mã ngân hàng (Bank ID) phổ biến
 | Ngân hàng | Mã Bank ID |
-| -------- | ---------- |
+|----------|------------|
 | Vietcombank | 970436 |
 | MB Bank | 970422 |
 | BIDV | 970418 |
@@ -69,6 +69,40 @@ npm run dev
 | TPBank | 970423 |
 | Sacombank | 970403 |
 | Techcombank | 970407 |
+| Agribank | 970405 |
+| VietinBank | 970415 |
+| VPBank | 970432 |
+| SHB | 970443 |
+| Eximbank | 970431 |
+| SCB (Sài Gòn) | 970429 |
+| HDBank | 970437 |
+| VIB | 970441 |
+| SeABank | 970440 |
+| Nam A Bank | 970428 |
+| BaoViet Bank | 970438 |
+| ABBank | 970425 |
+| OceanBank | 970414 |
+| PVcomBank | 970412 |
+| Bac A Bank | 970409 |
+| LienVietPostBank | 970449 |
+| KienlongBank | 970452 |
+| MSB (Maritime Bank) | 970426 |
+| Viet Capital Bank (Bản Việt) | 970454 |
+| NCB (Ngân hàng Quốc Dân) | 970419 |
+| Saigonbank | 970400 |
+| OCB (Phương Đông) | 970448 |
+| VRB (Việt – Nga) | 970421 |
+| CBBank (Xây dựng) | 970444 |
+| PG Bank | 970430 |
+| GPBank | 970408 |
+| Hong Leong Bank Vietnam | 970442 |
+| Shinhan Bank Vietnam | 970424 |
+| Woori Bank Vietnam | 970457 |
+| UOB Vietnam | 970458 |
+| Standard Chartered Vietnam | 970410 |
+| Public Bank Vietnam | 970439 |
+| CIMB Vietnam | 970454 |
+| Indovina Bank | 970434 |
 
 Bạn có thể dùng dropdown hoặc form nhập tay mã bank.
 
