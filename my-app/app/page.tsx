@@ -309,7 +309,10 @@ export default function VietQRPage() {
                           onError={(e) => {
                             // Fallback to emoji if image fails to load
                             e.currentTarget.style.display = 'none';
-                            e.currentTarget.nextElementSibling!.style.display = 'block';
+                            const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                            if (nextElement) {
+                              nextElement.style.display = 'block';
+                            }
                           }}
                         />
                         <span className="text-2xl hidden">🏦</span>
